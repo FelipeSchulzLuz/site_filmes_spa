@@ -1,0 +1,345 @@
+:root {
+	--bg-grey: hsla(0, 1%, 25%, 0.555);
+	--color-bronze: #c56c00c4;
+	--color-prata: #acacace3;
+	--color-ouro: #c7bb12c4;
+	--color-diamante: #30d1beda;
+	--bg-dark: #202020;
+}
+
+* { 
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+body {
+	background-image: url(./static/imgs/photo-1545129139-1beb780cf337.webp);
+	background-position: center;
+	background-size: cover;
+	background-repeat: repeat-y;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 100px 1fr 1fr;
+	gap: 0px 0px;
+	grid-template-areas:
+		"menu"
+		"conteudo";
+}
+
+button>a{text-decoration: none;
+
+}
+
+header {
+	background-image: url(./static/imgs/poltronas-dark.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: repeat-y;
+}
+
+ul {
+	margin: 15px;
+}
+
+nav-item {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 0;
+}
+
+nav-item li {
+	text-decoration: none;
+	color: rgb(172, 169, 169);
+	margin: 0px;
+	padding: 0;
+}
+
+span {
+	padding: 15px;
+	border-radius: 20px;
+}
+
+
+
+#btn-whatsapp {
+	background-color: rgb(16, 124, 16);
+	color: white;
+	width: 195px;
+	max-width: 275px;
+	height: 70px;
+	max-height: 75px;
+	display: flex;
+	border-radius: 16px;
+	align-items: center;
+	justify-content: space-around;
+	white-space: nowrap;
+	justify-self: center;
+	align-self: center;
+}
+
+#btn-whatsapp a {
+	font-size: 1.2em;
+	text-decoration: none;
+	color: white;
+}
+
+#btn-whatsapp:hover {
+	background-color: rgb(0, 168, 0);
+}
+
+#cf-filter {
+	background-color: var(--bg-grey);
+}
+
+#cf-tecnologia {
+	margin-top: 20px;
+	text-align: center;
+	padding: 20px;
+	background-color: var(--bg-grey);
+	color: white;
+	border-bottom: solid #747474c7 3px;
+	background-color: #202020;
+}
+
+#cf-planos {
+	display:flex;
+	flex-direction: column;
+	background-color: var(--bg-grey);
+	color: white;
+	border-bottom: solid #747474c7 3px;
+}
+
+#cf-ponto-adicional {
+	background-image: url(./static/imgs/poltronas-dark.webp);
+	background-position: center;
+	background-size: cover;
+	background-repeat: repeat-y;
+	color: white;
+	text-align: center;
+}
+
+#cf-compatibilidade {
+	background-image: url(./static/imgs/popcorn.webp);
+	background-position: center;
+	background-size: cover;
+	background-repeat: repeat-y;
+	border-bottom: solid #747474c7 3px;
+}
+
+#bronze,
+#bronze>.card-header {
+	height: 129px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	background-color: var(--color-bronze);
+	border-radius: 20px;
+	margin: 10px 10px;
+}
+
+#diamante,
+#diamante>.card-header {
+	height: 129px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	background-color: var(--color-diamante);
+	border-radius: 20px;
+	margin: 10px 10px;
+}
+
+#ouro,
+#ouro>.card-header {
+	height: 129px;
+	background-color: var(--color-ouro);
+	border-radius: 20px;
+	margin: 10px 10px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+#prata,
+#prata>.card-header {
+	height: 129px;
+	background-color: var(--color-prata);
+	margin: 10px 10px;
+	border-radius: 20px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+
+}
+
+#logo {
+	margin-right: 5px;
+	justify-self: center;
+	align-self: center;
+}
+
+#nav-list {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#bronze,
+#prata,
+#ouro,
+#diamante {
+	border-radius: 20px;
+}
+
+#whatsapp {
+	color: white;
+	font-size: large;
+	background-color: forestgreen;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	border-radius: 16px;
+}
+
+
+/* CLASSES /\ */
+
+
+.card-big,
+.card {
+	color: black;
+	border-radius: 20px;
+	text-align: center;
+	background-color: #7979798c;
+	justify-content: space-between;
+	display: flex;
+	min-height: 480px;
+	max-width: 400px;
+	max-height: 950px;
+	flex-direction: column;
+	align-content: center;
+	margin: 10px;
+}
+
+.card-big>span {
+	background-color: aqua;
+}
+
+.card {
+	min-width: 300px;
+	width: 300px;
+	height: 300px;
+	max-height: 300px;
+}
+
+.card-footer {
+	margin-bottom: 15px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.card-header {
+	border-radius: 30px;
+	margin-top: 15px;
+}
+
+.menu {
+	background-color: rgb(235, 246, 184);
+	grid-area: menu;
+	justify-content: center;
+	align-content: center;
+	height: auto;
+}
+
+.navbar {
+	padding: 22px;
+}
+
+.nav-item {
+	display: flex;
+	padding: 0px;
+	margin: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-link {
+	font-size: 1.4em;
+}
+
+.conteudo {
+	background-color: rgba(0, 0, 0, 0.794);
+	grid-area: conteudo;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+
+@media(max-width: 845px) {
+	* {
+		font-size: small;
+	}
+
+	body {
+		grid-template-rows: 1fr 4fr;
+	}
+
+	menu {
+		height: auto;
+
+	}
+
+	nav-item {
+		flex-direction: column;
+		justify-content: space-around;
+		margin-top: 20px;
+	}
+
+	nav-item {
+		margin: 10px 0;
+	}
+
+	nav-item button {
+		margin: 10px 0;
+	}
+}
+
+@media(max-width: 500px) {
+
+	/* 349 - 500 */
+	* {
+		font-size: xx-small;
+	}
+
+}
+
+/*     */
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+/*@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+/*@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+/*@media (min-width: @screen-lg-min) { ... }
